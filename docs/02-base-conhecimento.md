@@ -7,9 +7,9 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json` | JSON | Personalizar explicações para o cenário do cliente |
+| `produtos_financeiros.json` | JSON | Lista os principais produtos educacionais |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do aluno |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
@@ -20,7 +20,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Sim, adaptei ele para um cenário de alunos FIES e ProUni
 
 ---
 
@@ -34,7 +34,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Os dados serão usados como base para tirar a dúvida do cliente.
 
 ---
 
@@ -46,10 +46,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 Dados do Cliente:
 - Nome: João Silva
 - Perfil: Moderado
-- Saldo disponível: R$ 5.000
-
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+- Tipo de Beneficio: FIES
+- Curso: Medicina
 ...
 ```
